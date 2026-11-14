@@ -46,11 +46,13 @@ sidebar:
   offset: 12
 
 avatar:
-  url: false
+  url: https://avatars.githubusercontent.com/u/138957931?v=4&s=256
   rounded: true
   rotated: true
 
 social:
+  GitHub: https://github.com/WitchKlee || fab fa-github
+  E-Mail: mailto:juan2298758098@gmail.com || fa fa-envelope
   RSS: /atom.xml || fa fa-rss
 
 toc:
