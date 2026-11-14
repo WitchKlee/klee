@@ -1,0 +1,31 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "博客：本地预览",
+      "type": "npm",
+      "script": "start",
+      "problemMatcher": []
+    },
+    {
+      "label": "博客：新建文章",
+      "type": "process",
+      "command": "npm.cmd",
+      "args": ["run", "new", "--", "${input:postTitle}"],
+      "problemMatcher": []
+    },
+    {
+      "label": "博客：发布前检查",
+      "type": "npm",
+      "script": "check",
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "postTitle",
+      "type": "promptString",
+      "description": "输入新文章标题"
+    }
+  ]
+}

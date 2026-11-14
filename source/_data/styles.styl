@@ -1,0 +1,113 @@
+.friend-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 40px;
+  margin-top: 1rem;
+}
+
+.friend-card {
+  display: flex;
+  box-sizing: border-box;
+  min-width: 0;
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  transition-duration: .15s;
+}
+
+.friend-card:hover {
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .12), 0 0 6px 0 rgba(0, 0, 0, .04);
+  transform: scale(1.1);
+}
+
+.friend-avatar {
+  width: 3rem !important;
+  height: 3rem !important;
+  margin: 0 1em 0 0 !important;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.friend-details {
+  min-width: 0;
+  overflow: hidden;
+  font-style: italic;
+}
+
+.friend-details a {
+  border: 0;
+  color: #000;
+  font-weight: 600;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.friend-details a:hover {
+  color: #d480aa;
+  text-decoration: none;
+}
+
+.friend-details p {
+  margin: 4px 0 0;
+  overflow: hidden;
+  color: #a3a3a3;
+  font-size: 14px;
+  font-style: normal;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.post-body {
+  font-size: 14px;
+}
+
+// Keep tall article images within the viewport; open the lightbox for details.
+.post-body img:not(.emoji):not(.friend-avatar) {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 60vh;
+  object-fit: contain;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 1200px) {
+  .post-body {
+    font-size: 16px;
+  }
+}
+
+.category-all-page .category-all > .category-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 40px;
+}
+
+@media (max-width: 767px) {
+  .friend-grid,
+  .category-all-page .category-all > .category-list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.footer .footer-inner {
+  display: grid;
+  grid-template-columns: max-content max-content;
+}
+
+.footer .languages,
+.footer .beian,
+.footer .copyright,
+.footer .powered-by {
+  grid-column: 1 / -1;
+}
+
+.footer .busuanzi-count::before {
+  content: '|';
+  margin: 0 .5em;
+}

@@ -1,0 +1,132 @@
+# Site-owned NexT configuration. Keep theme source in node_modules untouched.
+custom_file_path:
+  bodyEnd: source/_data/body-end.njk
+  variable: source/_data/variables.styl
+  style: source/_data/styles.styl
+
+scheme: Muse
+darkmode: true
+minify: true
+
+vendors:
+  katex: https://cdn.jsdelivr.net/npm/katex@0.18.1/dist/katex.min.css
+
+favicon:
+  small: /images/favicon-16x16-next.png
+  medium: /images/favicon-32x32-next.png
+  apple_touch_icon: /images/apple-touch-icon-next.png
+  safari_pinned_tab: /images/logo.svg
+
+footer:
+  since: false
+  copyright: false
+  icon:
+    name: fa fa-heart
+    animated: false
+    color: "#ff0000"
+  powered: false
+
+menu:
+  home: / || fa fa-home
+  categories: /categories/ || fa fa-th
+  tags: /tags/ || fa fa-tags
+  archives: /archives/ || fa fa-archive
+  Resources: /resource/ || fa fa-book
+  Projects: /projects/ || fa fa-briefcase
+  Friends: /links/ || fa fa-link
+  about: /about/ || fa fa-user
+
+menu_settings:
+  icons: true
+  badges: true
+
+sidebar:
+  display: always
+  padding: 18
+  offset: 12
+
+avatar:
+  url: false
+  rounded: true
+  rotated: true
+
+social:
+  RSS: /atom.xml || fa fa-rss
+
+toc:
+  enable: true
+  number: false
+  wrap: true
+  expand_all: true
+  max_depth: 6
+
+codeblock:
+  copy_button:
+    enable: true
+    style: flat
+
+font:
+  enable: true
+  host: https://fonts.loli.net
+  global:
+    external: true
+    family: Noto Serif SC
+  title:
+    external: true
+    family: Ma Shan Zheng
+  headings:
+    external: true
+    family: Noto Serif SC
+  posts:
+    external: true
+    family: Noto Serif SC
+  codes:
+    external: true
+    family: JetBrains Mono
+
+baidu_site_verification: ''
+
+math:
+  every_page: false
+  katex:
+    enable: true
+    copy_tex: false
+
+lazyload: false
+fancybox: true
+
+pace:
+  enable: true
+  color: blue
+  theme: minimal
+
+comments:
+  style: tabs
+  active: ''
+  storage: false
+  lazyload: false
+
+utterances:
+  enable: false
+  repo: ''
+  issue_term: title
+  theme: github-light
+
+google_analytics:
+  tracking_id: ''
+  only_pageview: false
+
+busuanzi_count:
+  enable: false
+  total_visitors: true
+  total_visitors_icon: fa fa-user
+  total_views: true
+  total_views_icon: fa fa-eye
+  post_views: true
+  post_views_icon: fa fa-eye
+
+local_search:
+  enable: true
+  top_n_per_article: 1
+  unescape: false
+  preload: false
